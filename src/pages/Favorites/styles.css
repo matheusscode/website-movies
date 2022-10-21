@@ -1,0 +1,121 @@
+.container-favorites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.container-favorites h1 {
+  margin: 30px auto;
+}
+
+.container-favorites .empty-title {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 10px;
+  width: 300px;
+  background-color: red;
+  border-radius: 5px; 
+  animation: up 1s ease-in-out alternate infinite;
+}
+
+@keyframes up{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.container-favorites span {
+  font-size: 1.4rem;
+  width: 500px;
+  font-weight: 700;
+  padding: 0 14px;
+}
+
+.container-favorites ul {
+  width: 720px;
+  padding-bottom: 50px;
+}
+
+.container-favorites ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  border-right: 5px solid #fff;
+  margin-bottom: 15px;
+  color: black;
+  background-color: rgb(27, 27, 27);
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0 0 4px rgba(88, 88, 88, 0.644);
+  transition: 0.5s;
+  color: #fff;
+}
+
+.container-favorites ul li:hover {
+  background-color: rgb(22, 22, 22);
+  color: rgb(255, 0, 0);
+  border-right: 5px solid rgb(7, 218, 0);
+  transform: scale(1.02);
+}
+
+.container-favorites div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-favorites div .show-movie-details {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 9px;
+  font-weight: bold;
+  width: 120px;
+  border-radius: 7px;
+  margin-right: 14px;
+  background-color: #116feb;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.container-favorites div .show-movie-details:hover {
+  background-color: #0050b9;
+}
+
+.container-favorites button {
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: red;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container-favorites button:hover {
+  background-color: rgb(128, 0, 0);
+}
+
+@media (max-width: 750px) {
+  .container-favorites ul {
+    max-width: 750px;
+    width: 100%;
+  }
+
+  .container-favorites span{
+    width: 200px;
+  }
+}
